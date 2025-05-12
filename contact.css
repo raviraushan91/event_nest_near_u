@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Contact Card */
+main {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 10px 30px rgba(0, 255, 195, 0.1);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 255, 195, 0.25);
+}
+
+/* Heading */
+main h2 {
+  font-size: 32px;
+  color: #00ffc3;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+main p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 12px 0;
+  color: #f0f0f0;
+}
+
+main p strong {
+  color: #00ffc3;
+  font-weight: 600;
+}
+.home-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  background: #00ffc3;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: fit-content;
+}
+
+.home-button:hover {
+  background: #00cc99;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 255, 195, 0.6);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 30px 20px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  main p {
+    font-size: 15px;
+  }
+}

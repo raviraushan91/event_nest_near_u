@@ -1,0 +1,121 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    /* background-color: #f9fafb; */
+    color: #333;
+    background-image: url(concert2.jpg);
+    background-size: cover;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0077cc;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Account Section */
+  .account-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .account-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #86d5d982;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.596);
+  }
+  
+  .form-container {
+    margin-bottom: 2rem;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 1rem;
+    color: #101010;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0022cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #00a329;
+  }
+  
+  .logout-container {
+    text-align: center;
+  }
+  
+  .logout-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logout-container button {
+    padding: 1rem;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .logout-container button:hover {
+    background-color: #c62828;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
